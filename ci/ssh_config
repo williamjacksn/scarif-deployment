@@ -1,0 +1,4 @@
+Host scarif
+ Hostname scarif.subtlecoolness.com
+ IdentityFile ~/.ssh/id_ed25519
+ User rocky

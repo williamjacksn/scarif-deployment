@@ -5,6 +5,7 @@ services:
     ports:
       - 80:80
       - 443:443
+    pull_policy: build
     restart: unless-stopped
     user: 1000:1000
     volumes:
@@ -14,6 +15,7 @@ services:
 
   kuma:
     image: louislam/uptime-kuma:2.0.2
+    pull_policy: always
     restart: unless-stopped
     volumes:
       - /home/rocky/kuma:/app/data

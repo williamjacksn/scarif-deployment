@@ -1,0 +1,6 @@
+services:
+  kuma:
+    image: louislam/uptime-kuma:2
+    restart: unless-stopped
+    volumes:
+      - /home/rocky/kuma:/app/data

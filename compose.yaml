@@ -1,15 +1,15 @@
 services:
   caddy:
-    image: caddy:2.10.2
+    build: caddy
+    image: scarif-caddy
     ports:
       - 80:80
       - 443:443
     restart: unless-stopped
     user: 1000:1000
     volumes:
-      - /home/rocky/caddy/config:/config
-      - /home/rocky/caddy/data:/data
-      - /home/rocky/caddy/etc/caddy:/etc/caddy
+      - caddy-config:/config
+      - caddy-data:/data
     working_dir: /etc/caddy
 
   kuma:
@@ -17,3 +17,7 @@ services:
     restart: unless-stopped
     volumes:
       - /home/rocky/kuma:/app/data
+
+volumes:
+  caddy-config:
+  caddy-data:

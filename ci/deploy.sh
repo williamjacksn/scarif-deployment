@@ -2,5 +2,5 @@ install --mode=600 -D /dev/null ~/.ssh/id_ed25519
 echo "${SSH_PRIVATE_KEY}" > ~/.ssh/id_ed25519
 cp ci/ssh_config ~/.ssh/config
 ssh-keyscan -H scarif.subtlecoolness.com > ~/.ssh/known_hosts
-cp Caddyfile /home/rocky/caddy/etc/caddy/Caddyfile
+scp Caddyfile ssh://scarif/home/rocky/caddy/etc/caddy/Caddyfile
 docker --host ssh://scarif compose --project-name scarif up --detach --pull always --remove-orphans

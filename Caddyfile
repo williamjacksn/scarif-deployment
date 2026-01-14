@@ -1,0 +1,3 @@
+kuma.subtlecoolness.com {
+    reverse_proxy kuma:3001
+}

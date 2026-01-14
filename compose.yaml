@@ -1,4 +1,17 @@
 services:
+  caddy:
+    image: caddy:2.10.2
+    ports:
+      - 80:80
+      - 443:443
+    restart: unless-stopped
+    user: 1000:1000
+    volumes:
+      - /home/rocky/caddy/config:/config
+      - /home/rocky/caddy/data:/data
+      - /home/rocky/caddy/etc/caddy:/etc/caddy
+    working_dir: /etc/caddy
+
   kuma:
     image: louislam/uptime-kuma:2
     restart: unless-stopped

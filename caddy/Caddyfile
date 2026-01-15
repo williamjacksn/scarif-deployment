@@ -1,3 +1,7 @@
+birthdayfeed.subtlecoolness.com {
+    reverse_proxy birthdayfeed:8080
+}
+
 kuma.subtlecoolness.com {
     reverse_proxy kuma:3001
 }

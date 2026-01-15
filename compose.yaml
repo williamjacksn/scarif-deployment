@@ -1,4 +1,9 @@
 services:
+  birthdayfeed:
+    image: ghcr.io/williamjacksn/birthdayfeed
+    init: true
+    restart: unless-stopped
+
   caddy:
     build: caddy
     image: scarif-caddy

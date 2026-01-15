@@ -1,7 +1,9 @@
 services:
   birthdayfeed:
-    image: ghcr.io/williamjacksn/birthdayfeed
+    build: https://github.com/williamjacksn/birthdayfeed.git
+    image: scarif-birthdayfeed
     init: true
+    pull_policy: build
     restart: unless-stopped
 
   caddy:

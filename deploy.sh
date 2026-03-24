@@ -7,3 +7,4 @@ ssh-keyscan -H scarif.subtlecoolness.com > ~/.ssh/known_hosts
 docker context create scarif --docker "host=ssh://scarif"
 docker context use scarif
 docker compose --project-name scarif up --build --detach --remove-orphans
+docker image prune --force

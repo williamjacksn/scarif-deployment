@@ -1,3 +1,7 @@
+ahhnanium.rainwave.cc, ahhnananium.rainwave.cc {
+    respond "Coming soon"
+}
+
 birthdayfeed.subtlecoolness.com {
     reverse_proxy birthdayfeed:8080
 }

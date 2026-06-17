@@ -1,6 +1,10 @@
 ahhnanium.rainwave.cc, ahhnananium.rainwave.cc {
-    root * /usr/share/caddy
     file_server
+    header {
+        -Server
+        X-Powered-By ASP.NET
+    }
+    root * /usr/share/caddy
 }
 
 birthdayfeed.subtlecoolness.com {

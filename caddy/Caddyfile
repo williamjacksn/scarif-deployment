@@ -1,7 +1,7 @@
 ahhnanium.rainwave.cc, ahhnananium.rainwave.cc {
     file_server
     header {
-        -Server
+        Server Microsoft-IIS/10.0
         X-Powered-By ASP.NET
     }
     root * /usr/share/caddy

@@ -1,5 +1,6 @@
 ahhnanium.rainwave.cc, ahhnananium.rainwave.cc {
-    respond "Coming soon"
+    root * /usr/share/caddy
+    file_server
 }
 
 birthdayfeed.subtlecoolness.com {

@@ -26,6 +26,17 @@ services:
     volumes:
       - /home/rocky/kuma:/app/data
 
+  lpb:
+    build: https://github.com/williamjacksn/license-plate-bingo.git
+    environment:
+      DB: /app/.local/db.sqlite
+    image: scarif-license-plate-bingo
+    init: true
+    pull_policy: build
+    restart: unless-stopped
+    volumes:
+      - /home/rocky/lpb:/app/.local
+
 volumes:
   caddy-config:
   caddy-data:

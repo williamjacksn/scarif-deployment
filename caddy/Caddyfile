@@ -14,3 +14,7 @@ birthdayfeed.subtlecoolness.com {
 kuma.subtlecoolness.com {
     reverse_proxy kuma:3001
 }
+
+lpb.subtlecoolness.com {
+    reverse_proxy lpb:8080
+}

@@ -1,4 +1,15 @@
 services:
+  archipelago-web-dashboard:
+    build: https://github.com/williamjacksn/archipelago-web-dashboard.git#docker
+    environment:
+      AP_CONFIG: /app/config/config.toml
+    image: scarif-archipelago-web-dashboard
+    init: true
+    pull_policy: build
+    restart: unless-stopped
+    volumes:
+      - /home/rocky/aprw:/app/config
+
   birthdayfeed:
     build: https://github.com/williamjacksn/birthdayfeed.git
     image: scarif-birthdayfeed

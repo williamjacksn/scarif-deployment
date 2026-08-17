@@ -7,6 +7,10 @@ ahhnanium.rainwave.cc, ahhnananium.rainwave.cc {
     root * /usr/share/caddy
 }
 
+aprw.subtlecoolness.com {
+    reverse_proxy archipelago-web-dashboar:8080
+}
+
 birthdayfeed.subtlecoolness.com {
     reverse_proxy birthdayfeed:8080
 }

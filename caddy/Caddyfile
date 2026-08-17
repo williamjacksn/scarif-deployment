@@ -8,7 +8,7 @@ ahhnanium.rainwave.cc, ahhnananium.rainwave.cc {
 }
 
 aprw.subtlecoolness.com {
-    reverse_proxy archipelago-web-dashboar:8080
+    reverse_proxy archipelago-web-dashboard:8080
 }
 
 birthdayfeed.subtlecoolness.com {

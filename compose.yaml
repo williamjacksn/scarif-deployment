@@ -3,6 +3,8 @@ services:
     build: https://github.com/williamjacksn/archipelago-web-dashboard.git#docker
     environment:
       AP_CONFIG: /app/config/config.toml
+      AP_HOST: archipelago.gg
+      AP_SECURE: "true"
     image: scarif-archipelago-web-dashboard
     init: true
     pull_policy: build

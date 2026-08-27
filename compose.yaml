@@ -33,7 +33,7 @@ services:
     working_dir: /etc/caddy
 
   kuma:
-    image: louislam/uptime-kuma:2.5.0
+    image: louislam/uptime-kuma:2.5.3
     pull_policy: always
     restart: unless-stopped
     volumes:

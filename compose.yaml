@@ -50,6 +50,22 @@ services:
     volumes:
       - /home/rocky/lpb:/app/.local
 
+  transmission:
+    environment:
+      PUID: "1000"
+      PGID: "1000"
+      TZ: Etc/UTC
+    image: lscr.io/linuxserver/transmission:4.1.3
+    ports:
+      - 100.101.205.124:9091:9091
+      - 51413:51413
+      - 51413:51413/udp
+    pull_policy: always
+    restart: unless-stopped
+    volumes:
+      - /home/rocky/transmission/config:/config
+      - /home/rocky/transmission/downloads:/downloads
+
 volumes:
   caddy-config:
   caddy-data:

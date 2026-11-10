@@ -28,6 +28,7 @@ services:
     volumes:
       - caddy-config:/config
       - caddy-data:/data
+      - /home/rocky/tech-forum-archiver/tech-forum-site:/srv/tfa
     working_dir: /etc/caddy
 
   kuma:

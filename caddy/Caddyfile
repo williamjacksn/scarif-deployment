@@ -22,3 +22,11 @@ kuma.subtlecoolness.com {
 lpb.subtlecoolness.com {
     reverse_proxy lpb:8080
 }
+
+tfa.subtlecoolness.com {
+    file_server
+    header {
+        -Server
+    }
+    root /srv/tfa
+}
